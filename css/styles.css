@@ -1,0 +1,55 @@
+:root {
+  --primario: #284150;
+  --secundario: #afafb4;
+  --rojo: #d24639ff;
+  --amarillo: #ffb400ff;
+  --verde: #00aa0fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primario);
+}
+
+button {
+  width: max-content;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+p, label {
+  font-size: 1rem;
+}
+
+.boton-principal {
+  border: 3px solid var(--primario);
+  background-color: var(--primario);
+  color: white;
+}
+
+.boton-principal:active {
+  background-color: white;
+  color: var(--primario);
+}
+
+.boton-secundario {
+  border: 3px solid var(--primario);
+  background-color: white;
+  color: var(--primario);
+}
+
+.boton-secundario:active {
+  background-color: var(--primario);
+  color: white;
+}
+
+.boton-terciario {
+  border: 3px solid var(--secundario);
+  background-color: white;
+  color: var(--secundario);
+}

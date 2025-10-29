@@ -1,0 +1,104 @@
+h1{
+  text-align: center;
+  padding: 22px;
+}
+
+body {
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#tablero {
+  width: min-content;
+  display: grid;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#tablero div {
+  border: 3px solid var(--primario);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+#teclado{
+  padding: 30px;
+  width: 440px;
+  border: 3px solid var(--primario);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  user-select: none;
+  
+}
+
+
+#ajustes {
+  position: absolute;
+  bottom: 3px;
+  right: 10px
+}
+
+#teclado div {
+  cursor: pointer;
+  color: var(--secundario);
+  min-width: 50px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#info {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#backspace, #enter {
+  color: var(--primario) !important; 
+}
+
+.verde {
+  background-color: var(--verde);
+}
+
+.amarillo {
+  background-color: var(--amarillo);
+}
+
+.gris {
+  background-color: var(--primario);
+  color: white;
+}
+
+.tecla-apretada {
+  font-weight: 800 !important;
+  color: var(--primario) !important;
+}
+
+#tablero div.dragging {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+
+#tablero div.dragover {
+  opacity: 0.4;
+  border-color: var(--verde);
+}
+

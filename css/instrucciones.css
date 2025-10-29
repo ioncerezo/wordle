@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+li {
+  margin-left: 20px;
+}
+
+section {
+  max-width: 500px;
+}
+
+img {
+  padding-left: 400px;
+  margin-bottom: 40px;
+  clip-path: inset(0px 400px 0px 0px);
+}
+
+input{
+ accent-color: var(--primario);
+}
+
+span {
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  gap: 20px
+}
+
+form > article {
+  width: 100%;
+}
+
+.verde {
+  color: var(--verde);
+  font-weight: 600;
+}
+
+.amarillo {
+  color: var(--amarillo);
+  font-weight: 600;
+}
+
+.gris {
+  color: var(--primario);
+  font-weight: 600;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/juego.css" />
+    <title>Wordle</title>
+  </head>
+  <body>
+    <h1>Wordle</h1>
+    <section>
+      <h4 id="info"><span id="tiempo"></span> segundos</h4>
+      <article id="tablero"></article>
+    </section>
+    <section id="teclado"></section>
+    <section id="ajustes">
+      <button id="btn-ajustes" class="boton-secundario">⚙︎</button>
+      <button id="cerrar-sesion" class="boton-secundario">⏻</button>
+    </section>
+    <audio id="sonido-tecla" src="recursos/keypress.mp3"></audio>
+  </body>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script type="module" src="js/juego.js"></script>
+</html>

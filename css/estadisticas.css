@@ -1,0 +1,46 @@
+
+
+#tablero-color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
+}
+
+pre {
+  width: min-content;
+}
+
+#estadisticas {
+  width: 300px;
+  border: 3px solid var(--primario);
+  border-radius: 10px;
+  padding: 10px;
+}
+.titulo-estadistica {
+  font-weight: 600;
+  padding-right: 6px;
+}
+
+body {
+  height: 99vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr 10fr;
+  gap: 0px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}

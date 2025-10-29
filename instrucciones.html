@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/instrucciones.css">
+    <title>Instrucciones - Wordle</title>
+  </head>
+  <body>
+    <hero>
+      <img src="img/wordle-logo.png" alt="logo de wordle" />
+    </hero>
+    <section>
+
+      <article>
+      <h2>Instrucciones:</h2>
+      <p>Tienes <span id="intentos-instrucciones">6</span>
+        intentos para adivinar una palabra secreta de
+        <span id="longitud-instrucciones">5</span>
+        carácteres en <span id="duracion-instrucciones">105</span>
+        segundos. Después de cada intento, los colores de las letras
+        te darán una pista:
+      </p>
+      <ul>
+        <li>
+          <span class="verde">Verde:</span>
+          La letra está en la palabra y en la posición correcta
+        </li>
+        <li>
+          <span class="amarillo">Amarillo:</span> 
+          La letra está en la palabra, pero en la posición incorrecta
+        </li>
+        <li>
+          <span class="gris">Gris:</span>
+          La letra no está en la palabra
+        </li>
+      </ul>
+      </article>
+      <h2>Elige la dificultad:</h2>
+      
+      <form>
+        <article>
+        <div>
+          <label for="intentos">Intentos (entre 1 y 10):</label>
+          <input type="range" id="intentos" name="intentos" min="1" max="10"></input>
+        </div>
+        <div>
+          <label for="longitud">Longitud de palabra (entre 3 and 7):</label>
+          <input type="range" id="longitud" name="longitud" min="3" max="7"></input>
+        </div>
+        <div>
+          <label for="duracion">Duración máxima (entre 30 seg y 3 min):</label>
+          <input type="range" id="duracion" name="tiempo" min="30" max="180"></input>
+        </div>
+        </article>
+        <article>
+          <label for="predefinidos">Dificultad elegida: </label>
+          <select name="predefinidos" id="predefinidos">
+            <option value="facil">Fácil</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="dificil">Difícil</option>
+            <option value="personalizada">Personalizada</option>
+          </select>
+        </article>
+        <button class="boton-principal">JUGAR</button>
+      </form>
+    </section>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script type="module" src="js/instrucciones.js"></script>
+  </body>
+</html>
